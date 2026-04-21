@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import os
 
-OUT_PATH = "data/scorecard_clean.csv"
+OUT_PATH = "data/college_scorecard_clean.csv"
 COLS = {
     # identifiers
     "UNITID":            "unitid",
@@ -92,12 +92,12 @@ def save(df, path):
     print(f"Saved: {path}")
  
  
-def clean():
+def clean_data():
     df = load_data()
     df = coerce_numeric(df)
     df = filter_universe(df)
     df = consolidate_sat(df)
     df = consolidate_tuition(df)
     df = label_control(df)
-    return df
+    save(df, OUT_PATH)
 

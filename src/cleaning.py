@@ -5,8 +5,8 @@ import pandas as pd
 import numpy as np
 import os
 
-OUT_PATH = "data/college_scorecard_clean.csv"
-COLS = {
+output_path = "data/college_scorecard_clean.csv"
+cols = {
     # identifiers
     "UNITID":            "unitid",
     "INSTNM":            "name",
@@ -50,7 +50,7 @@ def load_data():
         na_values=["NULL", "PrivacySuppressed"],
         low_memory=False,
     )
-    df = df[list(COLS.keys())].rename(columns=COLS)
+    df = df[list(cols.keys())].rename(columns=cols)
     return df
 
 def coerce_numeric(df):
@@ -99,5 +99,5 @@ def clean_data():
     df = consolidate_sat(df)
     df = consolidate_tuition(df)
     df = label_control(df)
-    save(df, OUT_PATH)
+    save(df, output_path)
 

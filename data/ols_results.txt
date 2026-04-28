@@ -3,8 +3,8 @@
 Dep. Variable:           md_earn_10yr   R-squared:                       0.619
 Model:                            OLS   Adj. R-squared:                  0.600
 Method:                 Least Squares   F-statistic:                     31.43
-Date:                Mon, 27 Apr 2026   Prob (F-statistic):          8.14e-187
-Time:                        18:14:03   Log-Likelihood:                -12280.
+Date:                Tue, 28 Apr 2026   Prob (F-statistic):          8.14e-187
+Time:                        18:37:14   Log-Likelihood:                -12280.
 No. Observations:                1163   AIC:                         2.467e+04
 Df Residuals:                    1106   BIC:                         2.496e+04
 Df Model:                          56                                         

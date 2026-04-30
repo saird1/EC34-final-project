@@ -1,0 +1,17 @@
+name: ec34
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11.14
+  - pandas=2.2
+  - numpy=1.26
+  - matplotlib=3.8
+  - seaborn=0.13
+  - scikit-learn=1.4
+  - statsmodels=0.14
+  - jupyterlab=4.1
+  - ipykernel=6.29
+  - pip
+  - pip:
+      - stargazer==0.0.5

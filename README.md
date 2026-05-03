@@ -40,7 +40,7 @@ cd project
 ### 2. Create and activate the conda environment
 ```bash
 conda env create -f environment.yml
-conda activate ec34
+conda activate ecfinal
 ```
 
 ### 3. Download the raw data

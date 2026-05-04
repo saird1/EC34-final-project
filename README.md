@@ -58,7 +58,7 @@ Run the three notebooks **in sequence**. Each notebook reads from `data/` and wr
 | Order | Notebook | What it does | Input | Output |
 |-------|----------|-------------|-------|--------|
 | 1 | `cleaning.ipynb` | Filters raw scorecard to 4-year operating schools; constructs SAT composite and tuition variables; labels institution type | `data/college_scorecard_raw.csv` | `data/college_scorecard_clean.csv` |
-| 2 | `log_FE_model.ipynb` | Runs OLS and log-log regression of earnings on selectivity, tuition, Pell %, and institution type with state fixed effects; produces regression tables and scatter plots | `data/college_scorecard_clean.csv` | `output/tables/`, `output/figures/` |
+| 2 | `ols_regression.ipynb` | Runs OLS and log-log regression of earnings on selectivity, tuition, Pell %, and institution type with state fixed effects; produces regression tables and scatter plots | `data/college_scorecard_clean.csv` | `output/tables/`, `output/figures/` |
 | 3 | `lasso_randomforest.ipynb` | Runs LASSO (cross-validated) for variable selection; compares OLS vs. LASSO coefficients; uses Random Forest as a non-parametric robustness check; reports test-set RMSE across all models | `data/college_scorecard_clean.csv` | `output/figures/`, printed model comparison |
 
 To run a notebook:
